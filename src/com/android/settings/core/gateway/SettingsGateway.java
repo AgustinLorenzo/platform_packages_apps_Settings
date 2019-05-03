@@ -141,6 +141,7 @@ import com.android.settings.wifi.WifiSettings;
 import com.android.settings.wifi.calling.WifiCallingSettings;
 import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.tether.WifiTetherSettings;
+import com.android.settings.livedisplay.LiveDisplaySettings;
 
 import com.aosip.owlsnest.OwlsNestSettings;
 import com.aosip.owlsnest.advanced.SystemCategory;
@@ -308,6 +309,7 @@ public class SettingsGateway {
             FlingSettingsActivity.class.getName(),
             PulseSettingsActivity.class.getName(),
             BatteryLightSettings.class.getName(),
+			LiveDisplaySettings.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
