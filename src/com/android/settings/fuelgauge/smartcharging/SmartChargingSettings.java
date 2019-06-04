@@ -36,7 +36,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.aosip.support.preferences.CustomSeekBarPreference;
+import com.aosip.support.preference.CustomSeekBarPreference;
 
 /**
  * Settings screen for Smart charging
