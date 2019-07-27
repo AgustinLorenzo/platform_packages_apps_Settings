@@ -46,6 +46,32 @@
         <item>300000</item>
     </string-array>
 
+    <!-- QS tile styles -->
+    <string-array name="qs_selector_entries" translatable="false">
+        <item>@string/qstile_default</item>
+        <item>@string/qstile_squircle</item>
+        <item>@string/qstile_justicons</item>
+        <item>@string/qstile_inkdrop</item>
+        <item>@string/qstile_shishu_nights</item>
+        <item>@string/qstile_circle_dualtone</item>
+        <item>@string/qstile_dottedcircle</item>
+        <item>@string/qstile_shishuink</item>
+        <item>@string/qstile_attemptmountain</item>
+    </string-array>
+
+    <string-array name="qs_selector_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
     <!-- Fingerprint sensor locations.  Devices should configure their sensor location using
          config_fingerprintSensorLocation -->
     <string-array name="security_settings_fingerprint_sensor_locations" translatable="false">
