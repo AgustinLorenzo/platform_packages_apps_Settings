@@ -30,7 +30,6 @@ import android.os.Process;
 import android.os.SystemClock;
 import android.os.UserHandle;
 import android.os.UserManager;
-import android.provider.Settings;
 import android.support.annotation.IntDef;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
@@ -505,10 +504,6 @@ public class BatteryUtils {
         return 0;
     }
 
-    public boolean isAggressiveStandby() {
-        return Settings.System.getInt("aggressive_standby_enabled", defaultValue) == 1;
-    }
-
     public boolean isPreOApp(final String packageName) {
         try {
             ApplicationInfo info = mPackageManager.getApplicationInfo(packageName,
@@ -549,7 +544,7 @@ public class BatteryUtils {
 
         return isSystemUid(uid) || powerWhitelistBackend.isWhitelisted(packageNames)
                 || (isSystemApp(mPackageManager, packageNames) && !hasLauncherEntry(packageNames))
-                || (isExcessiveBackgroundAnomaly(anomalyInfo) && (!isPreOApp(packageNames) || isAggressiveStandby));
+                || (isExcessiveBackgroundAnomaly(anomalyInfo) && !isPreOApp(packageNames));
     }
 
     private boolean isExcessiveBackgroundAnomaly(AnomalyInfo anomalyInfo) {
